@@ -13,7 +13,7 @@ public class JacksonTest {
 
     @Test
     public void parseAndCheckJsonFileTest() throws Exception {
-        File json = new File("src\\test\\resources\\user");
+        File json = new File("src\\test\\resources\\user.json");
         UserModel user = objectMapper.readValue(json, UserModel.class);
 
         Assertions.assertEquals("Ivan", user.getFirstName());
