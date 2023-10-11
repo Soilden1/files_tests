@@ -1,0 +1,15 @@
+{
+  "firstName": "Ivan",
+  "lastName": "Ivanov",
+  "age": 20,
+  "email": "ivanovIvan123@gmail.com",
+  "phoneNumber": "88005553535",
+  "weight": "72.55",
+  "gender": "male",
+  "isStudent": true,
+  "hobbies": [
+    "Sports",
+    "Reading",
+    "Music"
+  ]
+}
