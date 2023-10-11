@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group = 'dimacm14.qa_guru'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testImplementation (
+            'com.codeborne:selenide:6.16.0',
+            'org.junit.jupiter:junit-jupiter:5.9.3',
+            'com.codeborne:pdf-test:1.7.0',
+            'com.codeborne:xls-test:1.4.3',
+            'com.opencsv:opencsv:5.7.1',
+            'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    )
+    testCompileOnly('org.projectlombok:lombok:1.18.30')
+    testAnnotationProcessor('org.projectlombok:lombok:1.18.30')
+}
+
+test {
+    useJUnitPlatform()
+}
