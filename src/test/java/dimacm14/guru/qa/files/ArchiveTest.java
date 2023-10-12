@@ -58,9 +58,9 @@ public class ArchiveTest {
         String[] secondLine = content.get(1);
         String[] thirdLine = content.get(2);
 
-        Assertions.assertArrayEquals(new String[]{"Овощ", "Фиолетовый"}, firstLine);
-        Assertions.assertArrayEquals(new String[]{"Фрукт", "Зеленый"}, secondLine);
-        Assertions.assertArrayEquals(new String[]{"Ягода", "Красный"}, thirdLine);
+        Assertions.assertArrayEquals(new String[]{"Vegetable", "Purple"}, firstLine);
+        Assertions.assertArrayEquals(new String[]{"Fruit", "Green"}, secondLine);
+        Assertions.assertArrayEquals(new String[]{"Berry", "Red"}, thirdLine);
     }
 
     private static void readXLSX(InputStream is) throws Exception {
